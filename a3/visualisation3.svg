@@ -1,0 +1,44 @@
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient Background -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(135,206,235); stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgb(255,255,255); stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#skyGradient)" />
+  
+  <!-- Rain Effect (Symbolic) -->
+  <g fill="blue" fill-opacity="0.5">
+    <circle cx="200" cy="100" r="2" />
+    <circle cx="300" cy="150" r="2" />
+    <circle cx="400" cy="200" r="2" />
+    <circle cx="500" cy="250" r="2" />
+    <!-- Additional "raindrops" here -->
+  </g>
+  
+  <!-- Chart Axes -->
+  <line x1="100" y1="450" x2="700" y2="450" stroke="black" stroke-width="2"/>
+  <line x1="100" y1="450" x2="100" y2="50" stroke="black" stroke-width="2"/>
+
+  <!-- X and Y Axis Labels -->
+  <text x="400" y="480" font-family="Arial" font-size="20" text-anchor="middle">Year</text>
+  <text x="60" y="250" font-family="Arial" font-size="20" text-anchor="middle" transform="rotate(-90,60,250)">Rainfall (inches)</text>
+  
+  <!-- Data Points and Lines -->
+  <!-- Assuming some arbitrary values for demonstration -->
+  <polyline fill="none" stroke="black" stroke-width="3" points="150,400 250,300 350,350 450,200 550,250"/>
+  
+  <!-- Predicted Data Points Highlight -->
+  <circle cx="450" cy="200" r="10" fill="red"/>
+  <circle cx="550" cy="250" r="10" fill="red"/>
+
+  <!-- Legend -->
+  <rect x="600" y="100" width="20" height="20" fill="black"/>
+  <text x="630" y="115" font-family="Arial" font-size="15">Actual Data</text>
+  <rect x="600" y="140" width="20" height="20" fill="red"/>
+  <text x="630" y="155" font-family="Arial" font-size="15">Predicted Data</text>
+  
+  <!-- Decorative Title -->
+  <text x="400" y="30" font-family="Arial" font-size="24" fill="darkblue" text-anchor="middle">Rainfall Data Visualization</text>
+</svg>

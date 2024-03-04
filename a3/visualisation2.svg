@@ -1,0 +1,33 @@
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient Background for visual appeal -->
+  <defs>
+    <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(240,248,255); stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgb(230,230,250); stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#backgroundGradient)" />
+  
+  <!-- Chart Axes -->
+  <line x1="100" y1="450" x2="700" y2="450" stroke="black" stroke-width="2"/>
+  <line x1="100" y1="450" x2="100" y2="50" stroke="black" stroke-width="2"/>
+
+  <!-- X and Y Axis Labels -->
+  <text x="400" y="480" font-family="Arial" font-size="20" text-anchor="middle">Month</text>
+  <text x="60" y="250" font-family="Arial" font-size="20" text-anchor="middle" transform="rotate(-90,60,250)">Rainfall (inches)</text>
+  
+  <!-- Example Data Points and Lines -->
+  <!-- This polyline simulates the actual rainfall data across months. Adjust points based on actual data. -->
+  <polyline fill="none" stroke="darkblue" stroke-width="3" points="150,400 250,350 350,300 450,200 550,250 650,300"/>
+  
+  <!-- Month Labels (Assuming a generic year for demonstration) -->
+  <text x="150" y="470" font-family="Arial" font-size="15" text-anchor="middle">Jan</text>
+  <text x="250" y="470" font-family="Arial" font-size="15" text-anchor="middle">Feb</text>
+  <text x="350" y="470" font-family="Arial" font-size="15" text-anchor="middle">Mar</text>
+  <text x="450" y="470" font-family="Arial" font-size="15" text-anchor="middle">Apr</text>
+  <text x="550" y="470" font-family="Arial" font-size="15" text-anchor="middle">May</text>
+  <text x="650" y="470" font-family="Arial" font-size="15" text-anchor="middle">Jun</text>
+  
+  <!-- Decorative Title -->
+  <text x="400" y="30" font-family="Arial" font-size="24" fill="darkblue" text-anchor="middle">Actual Rainfall Visualization</text>
+</svg>
